@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# ⏳ Retro Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание
+Retro Timer - это стильное приложение таймера с ретро-дизайном, реализованное на React. Таймер сочетает в себе винтажную эстетику с современной функциональностью.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Цветовая палитра
 
-### `npm start`
+| Color             | Hex       | Usage                          |
+|-------------------|-----------|--------------------------------|
+| Alabaster Hay     | `#F8EDD9` | Основной фон                   |
+| Tilled Earth      | `#133020` | Границы, акцентный цвет        |
+| Forest Fern       | `#327039` | Цвет работающего таймера       |
+| Wheat Field Sunrise | `#F0BE49` | Выделяющиеся элементы        |
+| Cherry Grove      | `#DD5C36` | Предупреждения и акценты       |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Установка
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+# Clone the repository
+git clone https://github.com/your-username/retro-countdown-timer.git
 
-### `npm test`
+# Navigate to project directory
+cd retro-countdown-timer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Install dependencies
+npm install
 
-### `npm run build`
+# Start development server
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Использование
+1. Установите время с помощью полей ввода или кнопок "+1"/"-1"
+2. Нажмите "Старт" для запуска таймера
+3. Используйте кнопки управления:
+  - ⏸️ Пауза/Продолжить
+  - 🔄 Сброс
+  - 🆕 Новый таймер
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+При завершении отсчета появится модальное окно с уведомлением.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Технологии
+1. React (функциональные компоненты, хуки)
+2. CSS (анимации, градиенты, псевдоэлементы)
+3. LocalStorage (сохранение состояния)
+4. Responsive Design
