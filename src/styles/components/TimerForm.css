@@ -1,0 +1,92 @@
+.timer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  border: 2px dashed var(--tilled-earth);
+}
+
+.timer-form h2 {
+  color: var(--forest-fern);
+  margin: 0;
+  font-size: 20px;
+}
+
+.time-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--tilled-earth);
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 70px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid var(--tilled-earth);
+  border-radius: 6px;
+  background-color: var(--alabaster-hay);
+  color: var(--tilled-earth);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.adjust-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.adjust-buttons button {
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: var(--forest-fern);
+  color: var(--alabaster-hay);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.adjust-buttons button:hover {
+  background-color: var(--tilled-earth);
+  transform: translateY(-2px);
+}
+
+.start-button {
+  padding: 12px 25px;
+  background-color: var(--cherry-grove);
+  color: var(--alabaster-hay);
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 0 var(--tilled-earth);
+}
+
+.start-button:hover {
+  background-color: #C04A2A;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #133020;
+}

@@ -1,0 +1,110 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(19, 48, 32, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--alabaster-hay);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  border: 5px solid var(--cherry-grove);
+  box-shadow: 
+    0 0 0 10px var(--wheat-field-sunrise),
+    0 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--forest-fern),
+    var(--forest-fern) 15px,
+    var(--wheat-field-sunrise) 15px,
+    var(--wheat-field-sunrise) 30px
+  );
+}
+
+.modal-content h2 {
+  color: var(--cherry-grove);
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.modal-content button {
+  padding: 12px 25px;
+  background-color: var(--tilled-earth);
+  color: var(--alabaster-hay);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 0 #000;
+}
+
+.modal-content button:hover {
+  background-color: #000;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #000;
+}
+
+.animation {
+  font-size: 80px;
+  margin: 20px 0;
+  color: var(--cherry-grove);
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    text-shadow: 
+      3px 3px 0 var(--wheat-field-sunrise),
+      6px 6px 0 rgba(0, 0, 0, 0.1);
+  }
+  to {
+    transform: scale(1.05);
+    text-shadow: 
+      5px 5px 0 var(--wheat-field-sunrise),
+      10px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@font-face {
+  font-family: 'Digital';
+  src: url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+  font-display: swap;
+}

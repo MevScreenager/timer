@@ -1,0 +1,53 @@
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.timer-controls button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.timer-controls button:nth-child(1) {
+  background-color: var(--forest-fern);
+  color: var(--alabaster-hay);
+}
+
+.timer-controls button:nth-child(1):hover {
+  background-color: #2A6231;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.timer-controls button:nth-child(2) {
+  background-color: var(--wheat-field-sunrise);
+  color: var(--tilled-earth);
+}
+
+.timer-controls button:nth-child(2):hover {
+  background-color: #E0AE39;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.timer-controls button:nth-child(3) {
+  background-color: var(--tilled-earth);
+  color: var(--alabaster-hay);
+}
+
+.timer-controls button:nth-child(3):hover {
+  background-color: #CD4C26;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
